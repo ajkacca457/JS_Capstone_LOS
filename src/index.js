@@ -1,8 +1,9 @@
 import Phaser from 'phaser';
+import Preload from './preload';
 import Intro from './intro';
 import Level1 from './level1';
 import Level2 from './level2';
-import Preload from './preload';
+import Gameover from './gameover';
 import './style.css';
 
 const config = {
@@ -17,7 +18,7 @@ const config = {
       debug: true,
     },
   },
-  scene: [Preload,Intro,Level1, Level2],
+  scene: [Preload, Intro, Level1, Level2,Gameover],
 };
 
 export default new Phaser.Game(config);

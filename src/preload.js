@@ -18,8 +18,8 @@ import Mushroom from './assets/killmushroom.png';
 import Door from './assets/door.png';
 import Los from './assets/LoS.png';
 import Logo from './assets/logo.png';
-import Main from './assets/main.mp3';
-
+import Start from './assets/start.wav';
+import Death from './assets/death.mp3';
 
 
 export default class Preload extends Phaser.Scene {
@@ -44,9 +44,10 @@ export default class Preload extends Phaser.Scene {
     this.load.image('logo', Logo);
     this.load.image('los', Los);
     this.load.audio('jump', Jump);
-    this.load.audio('main', Main);
     this.load.audio('collect', Coinsound);
     this.load.atlas('soha', Sohaimg, Soha);
+    this.load.audio('start', Start);
+    this.load.audio('death', Death);
   }
 
 

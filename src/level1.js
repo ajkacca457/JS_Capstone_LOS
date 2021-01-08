@@ -27,6 +27,7 @@ preload() {
 create() {
   this.sound.add('jump');
   this.sound.add('collect');
+  this.sound.add('death');
 
 
   this.background = this.add.tileSprite(0, 0, 1400, 800, 'bg');
@@ -161,7 +162,14 @@ dangerAction(player) {
   this.physics.pause();
   player.setTint(0xdb7093);
   player.anims.play('soha-idle-down');
+  this.sound.play("death")
+  this.time.addEvent({ delay: 1000, callback:this.gameOver, callbackScope: this});
 }
+
+gameOver(){
+  this.scene.start('gameover');
+}
+
 
 update() {
   if (this.cursors.left.isDown) {
