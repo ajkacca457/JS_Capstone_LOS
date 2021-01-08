@@ -9,6 +9,9 @@
 
 The game can be played using the arrow keys for moving the player. Player can move forward by using the right arrow key and move backward by using the left arrow key. Player can use to up arrow key to jump between the platforms and can collect coin. Player needs to avoid all the spikes,rocks,plants and mushrooms placed on different places. If player lands on these things the game will be over. There are gates that player can use to go to the next level. Player can collect coins and each coin will add 10 points to player's score. The goal of the player is to collect all the coins from two levels without getting killed.
 
+## Video Presentation
+[Presentation](https://www.loom.com/share/3878bb087a7d40b7a86de3fc7724b337)
+
 ## Built With
 
 - Javascript
