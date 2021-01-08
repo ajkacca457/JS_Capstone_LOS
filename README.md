@@ -50,9 +50,6 @@ $ run "npm run test"
 
 ```
 
-## Live vesion
-[click here]()
-
 ## Authors
 
 👤 **Avijit Karmaker**
