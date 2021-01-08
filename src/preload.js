@@ -16,6 +16,9 @@ import Rock from './assets/killrock.png';
 import Plant from './assets/killplant.png';
 import Mushroom from './assets/killmushroom.png';
 import Door from './assets/door.png';
+import Los from './assets/LoS.png';
+import Logo from './assets/logo.png';
+
 
 
 export default class Preload extends Phaser.Scene {
@@ -37,6 +40,8 @@ export default class Preload extends Phaser.Scene {
     this.load.image('mushroom', Mushroom);
     this.load.image('coin', Coin);
     this.load.image('door', Door);
+    this.load.image('logo', Logo);
+    this.load.image('los', Los);
     this.load.audio('jump', Jump);
     this.load.audio('collect', Coinsound);
     this.load.atlas('soha', Sohaimg, Soha);
@@ -44,6 +49,6 @@ export default class Preload extends Phaser.Scene {
 
 
   create() {
-    this.scene.start('level1');
+    this.scene.start('intro');
   }
 }

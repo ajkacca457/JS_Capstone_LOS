@@ -1,4 +1,5 @@
 import Phaser from 'phaser';
+import Intro from './intro';
 import Level1 from './level1';
 import Level2 from './level2';
 import Preload from './preload';
@@ -16,7 +17,7 @@ const config = {
       debug: true,
     },
   },
-  scene: [Preload, Level1, Level2],
+  scene: [Preload,Intro,Level1, Level2],
 };
 
 export default new Phaser.Game(config);
