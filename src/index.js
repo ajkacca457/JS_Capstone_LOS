@@ -1,6 +1,6 @@
 import Phaser from "phaser";
-import Game from "./game";
-import Game2 from "./game2";
+import Level1 from "./level1";
+import Level2 from "./level2";
 import Preload from "./preload";
 import './style.css';
 
