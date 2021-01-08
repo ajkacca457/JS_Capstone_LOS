@@ -3,6 +3,7 @@
 > This is the Capstone project for Javascript in Microverse Curriculum. It is an RPG game or in other words, it is a traditional platform game like mario or willow. This game is modeled after super mario bros and it consist of two playing level. The player has to collect coins from various platforms by avoiding different obstacles. The main character of the game is "Soha" and player can control the character using the arrow keys in keyboard. There is a possibility of level extension in future.
 
 ![screenshot](./src/assets/interface1.png)
+![screenshot](./src/assets/interface2.png)
 
 ## How to play
 

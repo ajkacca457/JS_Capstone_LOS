@@ -96,7 +96,7 @@ return doors
 }
 
 createText(){
-  const Text = this.add.text(10, 10, `Score:${this.Score}`, {
+  const Text = this.add.text(10, 10, `Score:${Score}`, {
       fontSize: '15px',
       fill: '#3377AA',
       backgroundColor:"white",
@@ -132,8 +132,8 @@ collectCoins(player,coin){
 
   coin.destroy()
   this.sound.play("collect")
-  this.Score+=10;
-  this.text.setText(`Score: ${this.Score}`);
+  Score+=10;
+  this.text.setText(`Score: ${Score}`);
 
 
 }

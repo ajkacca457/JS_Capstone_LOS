@@ -1,5 +1,7 @@
 import Phaser from "phaser";
 
+let Score=0;
+
 export default class Level2 extends Phaser.Scene  {
 
 player
@@ -26,8 +28,8 @@ create(){
   this.background=this.add.tileSprite(0,0,1400,800,"bg");
   this.background.setScale(.6)
   this.background.setOrigin(0,0);
-
    const platforms = this.createPlatforms();
+
     const coins = this.createCoins();
      this.text=this.createText();
      const dangers=this.createDanger();
@@ -114,7 +116,7 @@ return doors
 }
 
 createText(){
-  const Text = this.add.text(10, 10, `Score:${this.Score}`, {
+  const Text = this.add.text(10, 10, `Score:${Score}`, {
       fontSize: '15px',
       fill: '#3377AA',
       backgroundColor:"white",
@@ -150,8 +152,8 @@ collectCoins(player,coin){
 
   coin.destroy()
   this.sound.play("collect")
-  this.Score+=10;
-  this.text.setText(`Score: ${this.Score}`);
+  Score+=10;
+  this.text.setText(`Score: ${Score}`);
 
 
 }
