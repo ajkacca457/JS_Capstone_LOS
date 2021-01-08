@@ -4,7 +4,9 @@
   "description": "> This is the Capstone project for Javascript in Microverse Curriculum. It is an RPG game or in other words, it is a traditional platform game like mario or willow. This game is modeled after super mario bros and it consist of two playing level. The player has to collect coins from various platforms by avoiding different obstacles. The main character of the game is \"Soha\" and player can control the character using the arrow keys in keyboard. There is a possibility of level extension in future.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "webpack serve",
+    "build": "webpack"
   },
   "repository": {
     "type": "git",
@@ -20,5 +22,8 @@
   "devDependencies": {
     "webpack": "^5.11.1",
     "webpack-cli": "^4.3.1"
+  },
+  "dependencies": {
+    "webpack-dev-server": "^3.11.1"
   }
 }
