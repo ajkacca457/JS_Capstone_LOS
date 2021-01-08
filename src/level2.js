@@ -47,8 +47,11 @@ create() {
   this.physics.add.collider(this.player, dangers);
   this.player.setBounce(0.2);
   this.player.setCollideWorldBounds(true);
+  this.physics.add.collider(this.player, dangers,this.dangerAction,null,this);
+  this.physics.add.overlap(this.player, dangers,this.dangerAction,null,this);
   this.physics.add.overlap(this.player, coins, this.collectCoins, null, this);
   this.physics.add.overlap(this.player, doors, this.changeScene, null, this);
+
 
   this.anims.create({
     key: 'soha-idle-down',
@@ -160,6 +163,12 @@ collectCoins(player, coin) {
 
 changeScene() {
   this.scene.start('level1');
+}
+
+dangerAction(player,danger){
+  this.physics.pause();
+  player.setTint(0xff0000);
+  player.anims.play('soha-idle-down')
 }
 
 update() {
