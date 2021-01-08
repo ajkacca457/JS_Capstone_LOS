@@ -1,0 +1,24 @@
+{
+  "name": "JS_Capstone_LOS",
+  "version": "1.0.0",
+  "description": "> This is the Capstone project for Javascript in Microverse Curriculum. It is an RPG game or in other words, it is a traditional platform game like mario or willow. This game is modeled after super mario bros and it consist of two playing level. The player has to collect coins from various platforms by avoiding different obstacles. The main character of the game is \"Soha\" and player can control the character using the arrow keys in keyboard. There is a possibility of level extension in future.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ajkacca457/JS_Capstone_LOS.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ajkacca457/JS_Capstone_LOS/issues"
+  },
+  "homepage": "https://github.com/ajkacca457/JS_Capstone_LOS#readme",
+  "devDependencies": {
+    "webpack": "^5.11.1",
+    "webpack-cli": "^4.3.1"
+  }
+}
