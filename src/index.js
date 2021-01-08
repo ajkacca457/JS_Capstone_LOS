@@ -13,6 +13,7 @@ const config = {
     default: 'arcade',
     arcade: {
       gravity: { y: 300 },
+      debug: true,
     },
   },
   scene: [Preload, Level1, Level2],

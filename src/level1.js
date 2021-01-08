@@ -35,6 +35,7 @@ create() {
 
   const platforms = this.createPlatforms();
   const coins = this.createCoins();
+  const dangers = this.createDanger();
   this.text = this.createText();
   const doors = this.createDoor();
 
@@ -43,6 +44,7 @@ create() {
 
   this.physics.add.collider(this.player, platforms);
   this.physics.add.collider(coins, platforms);
+  this.physics.add.collider(this.player, dangers);
   this.player.setBounce(0.2);
   this.player.setCollideWorldBounds(true);
   this.physics.add.overlap(this.player, coins, this.collectCoins, null, this);
@@ -91,6 +93,18 @@ createPlatforms() {
   platforms.create(140, 250, 'tile2').setSize(100, 40).setScale(0.5);
   platforms.create(650, 200, 'tile2').setSize(100, 40).setScale(0.5);
   return platforms;
+}
+
+createDanger() {
+  const dangers = this.physics.add.staticGroup();
+  dangers.create(180, 375, 'spike').setSize(30, 10).setScale(0.3);
+  dangers.create(140, 225, 'rock').setSize(30, 10).setScale(0.3);
+  dangers.create(395, 138, 'plant').setSize(30, 10).setScale(0.3);
+  dangers.create(385, 450, 'rock').setSize(30, 10).setScale(0.3);
+  dangers.create(555, 450, 'rock').setSize(30, 10).setScale(0.3);
+
+
+  return dangers;
 }
 
 
