@@ -162,11 +162,11 @@ dangerAction(player) {
   this.physics.pause();
   player.setTint(0xdb7093);
   player.anims.play('soha-idle-down');
-  this.sound.play("death")
-  this.time.addEvent({ delay: 1000, callback:this.gameOver, callbackScope: this});
+  this.sound.play('death');
+  this.time.addEvent({ delay: 1000, callback: this.gameOver, callbackScope: this });
 }
 
-gameOver(){
+gameOver() {
   this.scene.start('gameover');
 }
 

@@ -15,10 +15,9 @@ const config = {
     default: 'arcade',
     arcade: {
       gravity: { y: 300 },
-      debug: true,
     },
   },
-  scene: [Preload, Intro, Level1, Level2,Gameover],
+  scene: [Preload, Intro, Level1, Level2, Gameover],
 };
 
 export default new Phaser.Game(config);

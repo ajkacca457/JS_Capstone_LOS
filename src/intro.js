@@ -6,10 +6,9 @@ export default class Intro extends Phaser.Scene {
   }
 
   create() {
-
     const mainbackground = this.add.image(420, 270, 'los').setScale(0.6);
     mainbackground.setOrigin(0.5, 0.5);
-    const mainlogo = this.add.image(540, 80, 'logo');
+    this.add.image(540, 80, 'logo');
 
     const startButton = this.add.text(470, 200, 'Start Game', {
       fill: 'white',
@@ -42,11 +41,10 @@ export default class Intro extends Phaser.Scene {
 
   changeScene() {
     this.scene.start('level1');
-    this.sound.play("start")
+    this.sound.play('start');
   }
 
   getScore() {
-    console.log('hello');
+    this.sound.play('start');
   }
-
 }
