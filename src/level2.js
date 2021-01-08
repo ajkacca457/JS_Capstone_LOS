@@ -19,14 +19,13 @@ constructor() {
 }
 
 preload() {
+  this.cursors = this.input.keyboard.createCursorKeys();
 }
 
 
 create() {
   this.sound.add('jump');
   this.sound.add('collect');
-
-  this.cursors = this.input.keyboard.createCursorKeys();
 
   this.background = this.add.tileSprite(0, 0, 1400, 800, 'bg');
   this.background.setScale(0.6);
@@ -44,11 +43,10 @@ create() {
   this.physics.add.collider(this.player, platforms);
   this.physics.add.collider(coins, platforms);
   this.physics.add.collider(dangers, platforms);
-  this.physics.add.collider(this.player, dangers);
   this.player.setBounce(0.2);
   this.player.setCollideWorldBounds(true);
-  this.physics.add.collider(this.player, dangers,this.dangerAction,null,this);
-  this.physics.add.overlap(this.player, dangers,this.dangerAction,null,this);
+  this.physics.add.collider(this.player, dangers, this.dangerAction, null, this);
+  this.physics.add.overlap(this.player, dangers, this.dangerAction, null, this);
   this.physics.add.overlap(this.player, coins, this.collectCoins, null, this);
   this.physics.add.overlap(this.player, doors, this.changeScene, null, this);
 
@@ -165,10 +163,10 @@ changeScene() {
   this.scene.start('level1');
 }
 
-dangerAction(player,danger){
+dangerAction(player) {
   this.physics.pause();
-  player.setTint(0xff0000);
-  player.anims.play('soha-idle-down')
+  player.setTint(0xdb7093);
+  player.anims.play('soha-idle-down');
 }
 
 update() {

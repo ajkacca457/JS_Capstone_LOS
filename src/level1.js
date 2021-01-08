@@ -20,6 +20,7 @@ constructor() {
 }
 
 preload() {
+  this.cursors = this.input.keyboard.createCursorKeys();
 }
 
 
@@ -27,7 +28,6 @@ create() {
   this.sound.add('jump');
   this.sound.add('collect');
 
-  this.cursors = this.input.keyboard.createCursorKeys();
 
   this.background = this.add.tileSprite(0, 0, 1400, 800, 'bg');
   this.background.setScale(0.6);
@@ -44,8 +44,8 @@ create() {
 
   this.physics.add.collider(this.player, platforms);
   this.physics.add.collider(coins, platforms);
-  this.physics.add.collider(this.player, dangers,this.dangerAction,null,this);
-  this.physics.add.overlap(this.player, dangers,this.dangerAction,null,this);
+  this.physics.add.collider(this.player, dangers, this.dangerAction, null, this);
+  this.physics.add.overlap(this.player, dangers, this.dangerAction, null, this);
   this.player.setBounce(0.2);
   this.player.setCollideWorldBounds(true);
   this.physics.add.overlap(this.player, coins, this.collectCoins, null, this);
@@ -100,7 +100,7 @@ createDanger() {
   const dangers = this.physics.add.staticGroup();
   dangers.create(180, 375, 'spike').setSize(30, 10).setScale(0.3);
   dangers.create(140, 225, 'rock').setSize(30, 10).setScale(0.3);
-  dangers.create(395, 138, 'plant').setSize(30, 10).setScale(0.3);
+  dangers.create(350, 138, 'plant').setSize(30, 10).setScale(0.3);
   dangers.create(385, 450, 'rock').setSize(30, 10).setScale(0.3);
   dangers.create(555, 450, 'rock').setSize(30, 10).setScale(0.3);
 
@@ -137,7 +137,7 @@ createCoins() {
   const coins = this.physics.add.group({
     key: 'coin',
     repeat: 20,
-    setXY: { x: 100, y: 0, stepX: 40 },
+    setXY: { x: 50, y: 0, stepX: 40 },
   });
   coins.children.iterate((child) => {
     child.setSize(40, 40).setScale(0.4);
@@ -157,10 +157,10 @@ changeScene() {
   this.scene.start('level2');
 }
 
-dangerAction(player,danger){
+dangerAction(player) {
   this.physics.pause();
-  player.setTint(0xff0000);
-  player.anims.play('soha-idle-down')
+  player.setTint(0xdb7093);
+  player.anims.play('soha-idle-down');
 }
 
 update() {
