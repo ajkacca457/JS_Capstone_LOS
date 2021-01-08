@@ -35,7 +35,7 @@ create(){
      this.text=this.createText();
      const doors=this.createDoor();
 
-  this.player=this.physics.add.sprite(40,380,"wilma","right-walk-1.png" );
+  this.player=this.physics.add.sprite(40,380,"soha","right-walk-1.png" );
   this.player.body.setSize(this.player.width*.5,this.player.height*.9)
 
    this.physics.add.collider(this.player,platforms)

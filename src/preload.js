@@ -46,7 +46,7 @@ preload(){
 
 create(){
 
-this.scene.start("game")
+this.scene.start("level1")
 
 }
 
