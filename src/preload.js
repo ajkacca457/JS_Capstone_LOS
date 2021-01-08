@@ -39,7 +39,7 @@ preload(){
   this.load.image("door",Door)
   this.load.audio("jump",Jump)
     this.load.audio("collect",Coinsound)
-  this.load.atlas("wilma",Wilmatex,Wilma)
+  this.load.atlas("soha",Sohaimg,Soha)
 }
 
 
