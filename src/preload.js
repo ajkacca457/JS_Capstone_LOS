@@ -1,26 +1,45 @@
 import Phaser from 'phaser';
-import Background from './assets/backgroundForest.png';
-import Ground from './assets/block.png';
-import Tile1 from './assets/tileset1.png';
-import Tile2 from './assets/tileset2.png';
-import Tile3 from './assets/tileset3.png';
-import Tile4 from './assets/tile4.png';
-import TileS from './assets/tilesmall.png';
+import Levell from './assets/Sceneassets/Level1.json';
+import Level2 from './assets/Sceneassets/Level2.json';
+
+import Forrest from './assets/Sceneassets/Forrest.png';
+import Dessert from './assets/Sceneassets/Dessert.png';
+import Darklev from './assets/Sceneassets/main_lev_build_1.png';
+
+
 import Sohaimg from './assets/charachter/soha.png';
 import Soha from './assets/charachter/soha.json';
-import Jump from './assets/jump_10.wav';
-import Coin from './assets/coin2.png';
-import Coinsound from './assets/coin.wav';
-import Spike from './assets/killspike.png';
-import Rock from './assets/killrock.png';
-import Plant from './assets/killplant.png';
-import Mushroom from './assets/killmushroom.png';
-import Door from './assets/door.png';
-import Los from './assets/LoS.png';
-import Logo from './assets/logo.png';
-import Start from './assets/start.wav';
-import Death from './assets/death.mp3';
 
+import Sohabigimg from './assets/charachter/sohabig.png';
+import Sohabig from './assets/charachter/sohabig.json';
+
+import Dino from './assets/charachter/dino.png';
+import Zombie from './assets/charachter/zombie.png';
+
+import BackgroundD from './assets/Backgrounds/backgroundDesert.png';
+import BackgroundC from './assets/Backgrounds/backgroundCastles.png';
+
+import Gems from './assets/Others/Gems.png';
+import Keys from './assets/Others/key.png';
+import Trophy from './assets/Others/trophy.png';
+
+import Logo from './assets/Others/logo.png';
+import Playbtn from './assets/Others/play.png';
+import Leaderboard from './assets/Others/leaderboard.png';
+import Restart from './assets/Others/restart.png';
+import Gameover from './assets/Others/gameover.png';
+import Back from './assets/Others/back.png';
+import Credit from './assets/Others/credit.png';
+import Scroll from './assets/Others/scroll.png';
+
+
+import Jump from './assets/Sounds/jump_10.wav';
+import Collect from './assets/Sounds/coin.wav';
+import Death from './assets/Sounds/death.mp3';
+import Start from './assets/Sounds/start.wav';
+import Main from './assets/Sounds/main.wav';
+import Intro from './assets/Sounds/intro.wav';
+import Hover from './assets/Sounds/hover.wav';
 
 export default class Preload extends Phaser.Scene {
   constructor() {
@@ -28,26 +47,37 @@ export default class Preload extends Phaser.Scene {
   }
 
   preload() {
-    this.load.image('bg', Background);
-    this.load.image('block', Ground);
-    this.load.image('tile1', Tile1);
-    this.load.image('tile2', Tile2);
-    this.load.image('tile3', Tile3);
-    this.load.image('tile4', Tile4);
-    this.load.image('tiles', TileS);
-    this.load.image('rock', Rock);
-    this.load.image('plant', Plant);
-    this.load.image('spike', Spike);
-    this.load.image('mushroom', Mushroom);
-    this.load.image('coin', Coin);
-    this.load.image('door', Door);
-    this.load.image('logo', Logo);
-    this.load.image('los', Los);
-    this.load.audio('jump', Jump);
-    this.load.audio('collect', Coinsound);
+    this.load.tilemapTiledJSON('level1', Levell);
+    this.load.tilemapTiledJSON('level2', Level2);
+    this.load.image('forrest', Forrest);
+    this.load.image('dessert', Dessert);
+    this.load.image('darklev', Darklev);
+    this.load.image('backgroundd', BackgroundD);
+    this.load.image('backgroundc', BackgroundC);
     this.load.atlas('soha', Sohaimg, Soha);
-    this.load.audio('start', Start);
+    this.load.atlas('sohabig', Sohabigimg, Sohabig);
+    this.load.image('gems', Gems);
+    this.load.image('keys', Keys);
+    this.load.image('trophy', Trophy);
+    this.load.image('dino', Dino);
+    this.load.image('zombie', Zombie);
+
+    this.load.image('logo', Logo);
+    this.load.image('play', Playbtn);
+    this.load.image('leaderboard', Leaderboard);
+    this.load.image('restart', Restart);
+    this.load.image('gameover', Gameover);
+    this.load.image('back', Back);
+    this.load.image('credit', Credit);
+    this.load.image('scroll', Scroll);
+
+    this.load.audio('jump', Jump);
+    this.load.audio('collect', Collect);
     this.load.audio('death', Death);
+    this.load.audio('start', Start);
+    this.load.audio('main', Main);
+    this.load.audio('intro', Intro);
+    this.load.audio('hover', Hover);
   }
 
 
