@@ -7,7 +7,7 @@ It is a story of a brave adventurer and her name is Soha. She is in search of a 
 ## Gameplay
 
 ### Protagonist
-![screenshot](./src/assets/charachter/sohabig.png)
+![screenshot](./src/assets/charachter/soha.png)
 
 The player will be controlled using keyboard. she will be moving around the map and will jump over the traps and enemies.
 To move the player:
