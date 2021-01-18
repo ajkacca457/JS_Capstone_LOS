@@ -9,11 +9,11 @@
 
 ## Screenshots
 
-![screenshot](./src/assets/Screenshots/interface1.png)
-![screenshot](./src/assets/Screenshots/interface2.png)
-![screenshot](./src/assets/Screenshots/interface3.png)
-![screenshot](./src/assets/Screenshots/interface4.png)
-![screenshot](./src/assets/Screenshots/interface5.png)
+![screenshot](./src/assets/Screenshots/interface1.PNG)
+![screenshot](./src/assets/Screenshots/interface2.PNG)
+![screenshot](./src/assets/Screenshots/interface3.PNG)
+![screenshot](./src/assets/Screenshots/interface4.PNG)
+![screenshot](./src/assets/Screenshots/interface5.PNG)
 
 ## Instructions
 You can control the player using a mouse and a keyboard. You can move around the map in all directions, holding a machine gun and shooting at the zombies.
