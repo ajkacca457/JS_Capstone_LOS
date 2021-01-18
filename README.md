@@ -1,16 +1,33 @@
 # JS_Capstone_LOS
 
-> This is the Capstone project for Javascript in Microverse Curriculum. It is an RPG game or in other words, it is a traditional platform game like mario or willow. This game is modeled after super mario bros and it consist of two playing level. The player has to collect coins from various platforms by avoiding different obstacles. The main character of the game is "Soha" and player can control the character using the arrow keys in keyboard. There is a possibility of level extension in future.
+## Description
 
-![screenshot](./src/assets/interface1.png)
-![screenshot](./src/assets/interface2.png)
+> This is the Capstone project for Javascript in Microverse Curriculum. It is an RPG game or in other words, it is a traditional platform game like mario or willow. This game is modeled after super mario bros and it consist of two playing level. The player has to collect ruby from various platforms by avoiding different obstacles and enemies. The main character of the game is "Soha" and player can control the character using the arrow and space keys in keyboard. There is a possibility of level extension in future. Please read the Game Design Document for further information about the story and the gameplay.
 
-## How to play
+## Game Design Documentation
 
-The game can be played using the arrow keys for moving the player. Player can move forward by using the right arrow key and move backward by using the left arrow key. Player can use to up arrow key to jump between the platforms and can collect coin. Player needs to avoid all the spikes,rocks,plants and mushrooms placed on different places. If player lands on these things the game will be over. There are gates that player can use to go to the next level. Player can collect coins and each coin will add 10 points to player's score. The goal of the player is to collect all the coins from two levels without getting killed.
 
-## Video Presentation
-[Presentation](https://www.loom.com/share/3878bb087a7d40b7a86de3fc7724b337)
+## Screenshots
+
+![screenshot](./src/assets/Screenshots/interface1.png)
+![screenshot](./src/assets/Screenshots/interface2.png)
+![screenshot](./src/assets/Screenshots/interface3.png)
+![screenshot](./src/assets/Screenshots/interface4.png)
+![screenshot](./src/assets/Screenshots/interface5.png)
+
+## Instructions
+You can control the player using a mouse and a keyboard. You can move around the map in all directions, holding a machine gun and shooting at the zombies.
+
+To move the player:
+
+- PRESS "Left arrow key" to move Left
+- PRESS "Right arrow key" to move Right
+- PRESS "Space key" to Jump
+- PRESS "Space key+Right arrow key" to Jump and move forward
+- PRESS "Space key+Left arrow key" to Jump and move backward
+
+## Live Demo
+[Legend of Soha](https://legendofsoha.netlify.app/)
 
 ## Built With
 
@@ -28,14 +45,11 @@ The game can be played using the arrow keys for moving the player. Player can mo
 
 To get a local copy of the repository please run the following commands on your terminal:
 
-```
-$ cd <folder>
-```
-
 ```bash
+$ open terminal or gitbash
+$ cd <folder>
 $ git clone `https://github.com/ajkacca457/JS_Capstone_LOS.git`
 $ cd JS_Capstone_LOS
-$ open terminal or gitbash
 $ run npm install
 $ run "npm run start"
 $ run your "localhost server"
@@ -46,7 +60,10 @@ $ run your "localhost server"
 To test the project:
 
 ```
-$ run "npm run test"
+$ Open Terminal again
+$ Run cd JS_Capstone_LOS to enter directory
+$ Run npm run test to start testing
+$ All tests will pass ✅
 
 ```
 
