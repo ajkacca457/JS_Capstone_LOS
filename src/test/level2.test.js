@@ -13,11 +13,11 @@ test('Level2 key name is intro', () => {
 test('Level2 scene is not undefined', () => {
   expect(scene.sys.config).not.toBe(undefined);
 });
-
+/*eslint-disable */
 test('Level2 scene is a subclass of scene', () => {
   expect(Level2.prototype instanceof Phaser.Scene).toBe(true);
 });
-
+/* eslint-enable */
 test('Level2 to contain private variable player', () => {
   expect(scene.player).toBe(undefined);
 });

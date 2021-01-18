@@ -12,7 +12,7 @@ beforeEach(() => {
 test('getScores uses fetch and gives back score data in a nested array', () => {
   getScores(url)
     .then(data => {
-      expect(data).toEqual([{result: [{score: 42, user: "John"}]}]);
+      expect(data).toEqual([{ result: [{ score: 42, user: 'John' }] }]);
     });
 });
 

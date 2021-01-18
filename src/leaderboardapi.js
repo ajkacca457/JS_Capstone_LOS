@@ -24,4 +24,4 @@ export const postScores = (user, score, url) => fetch(url, {
   },
 })
   .then((response) => response.json())
-  .then((json) => console.log(json));
+  .then(catchErrors);

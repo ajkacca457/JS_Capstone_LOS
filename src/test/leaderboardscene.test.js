@@ -14,10 +14,11 @@ test('leaderboard scene is not undefined', () => {
   expect(scene.sys.config).not.toBe(undefined);
 });
 
+/*eslint-disable */
 test('leaderboard scene is a subclass of scene', () => {
   expect(Leaderboardscene.prototype instanceof Phaser.Scene).toBe(true);
 });
-
+/* eslint-enable */
 test('gameover to contain private variable text', () => {
   expect(scene.text).toBe(undefined);
 });

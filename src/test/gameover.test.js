@@ -14,9 +14,11 @@ test('gameover scene is not undefined', () => {
   expect(scene.sys.config).not.toBe(undefined);
 });
 
+/*eslint-disable */
 test('gameover scene is a subclass of scene', () => {
   expect(Gameover.prototype instanceof Phaser.Scene).toBe(true);
 });
+/* eslint-enable */
 
 test('gameover to contain private variable player', () => {
   expect(scene.name).toBe(undefined);

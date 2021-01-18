@@ -14,10 +14,11 @@ test('Level1 scene is not undefined', () => {
   expect(scene.sys.config).not.toBe(undefined);
 });
 
+/*eslint-disable */
 test('Level1 scene is a subclass of scene', () => {
   expect(Level1.prototype instanceof Phaser.Scene).toBe(true);
 });
-
+/* eslint-enable */
 test('Level1 to contain private variable player', () => {
   expect(scene.player).toBe(undefined);
 });

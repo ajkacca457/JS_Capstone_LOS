@@ -22,6 +22,8 @@ test('Intro to have a scene', () => {
   expect(scene.scene).not.toBe(null);
 });
 
+/*eslint-disable */
 test('Intro scene is a subclass of scene', () => {
   expect(Intro.prototype instanceof Phaser.Scene).toBe(true);
 });
+/* eslint-enable */
