@@ -7,7 +7,7 @@ It is a story of a brave adventurer and her name is Soha. She is in search of a 
 ## Gameplay
 
 ### Protagonist
-![screenshot](./src/assets/character/sohabig.png)
+![screenshot](./src/assets/charachter/sohabig.png)
 
 The player will be controlled using keyboard. she will be moving around the map and will jump over the traps and enemies.
 To move the player:
@@ -20,8 +20,8 @@ To move the player:
 
 
 ### Antagonist
-![screenshot](./src/assets/character/dino.png)
-![screenshot](./src/assets/character/zombie.png)
+![screenshot](./src/assets/charachter/dino.png)
+![screenshot](./src/assets/charachter/zombie.png)
 
 There are also spikes and stones which are traps and will kill player. Player needs to avoid them at all cost to win the game. All the dangers of the game are:
 
@@ -32,7 +32,7 @@ There are also spikes and stones which are traps and will kill player. Player ne
 ## Score
 
 - Collecting each ruby will increase score by 100.
-- Getting the goblet at 2nd level will finish the game with a congratulation message. 
+- Getting the goblet at 2nd level will finish the game with a congratulation message.
 
 ## Development Process
 
