@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap');
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+#textinfo {
+  display: block;
+  height: 30px;
+  width: 200px;
+  border: 2px black solid;
+  border-radius: 5px;
+}
+
+#subbtn {
+  margin-top: 15px;
+  width: 200px;
+  padding: 5px 0;
+  background-color: #704f32;
+  color: white;
+  border: none;
+  border-radius: 5px;
+}
