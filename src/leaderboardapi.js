@@ -13,15 +13,12 @@ export const getScores = (url) => fetch(url)
   .then(response => response.json())
   .then(data => data);
 
-export const postScores = (user, score, url) => fetch(url, {
-  method: 'POST',
-  body: JSON.stringify({
-    user,
-    score,
-  }),
-  headers: {
-    'Content-type': 'application/json; charset=UTF-8',
-  },
-})
-  .then((response) => response.json())
+export const postScores = (user, score, url) => fetch(url,
+  {
+    method: 'POST',
+    mode: 'cors',
+    headers:
+        { 'Content-Type': 'application/json' },
+    body: JSON.stringify({ user, score }),
+  })
   .then(catchErrors);
