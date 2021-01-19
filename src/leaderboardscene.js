@@ -20,8 +20,9 @@ export default class Leaderboardscene extends Phaser.Scene {
 
     getScores(url)
       .then((data) => {
+        console.log(data);
         const arr = [];
-        data.forEach((item) => arr.push({ name: item.user, score: item.score }));
+        data.result.forEach((item) => arr.push({ name: item.user, score: item.score }));
         const Highscores = arr.sort((a, b) => b.score - a.score).slice(1, 6);
         let gap = 0;
         Highscores.forEach((item) => {
